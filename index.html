@@ -1,9 +1,48 @@
-<html>
-  <head>
-  </head>
-  <body>
-    <h1>Hello KK, here your are</h1>
-    <p>This is my GitHub Pages :-)</p>
-  </body>
-</html>
+<table border="1" cellpadding="1" cellspacing="1" style="width:500px">
+	<tbody>
+		<tr>
+			<td>This is a examble about</td>
+		</tr>
+		<tr>
+			<td>
+			<p>
+
+SUBTYPE_DEFS subtype_list[] = {
+        {1, "SUBTYPE_1_MODEM_STATUS",           "subtype1_ok", "Modem states", NULL},
+        {2, "SUBTYPE_2_SIM_SWITCH",             "subtype2_ok", "Sim slot switch", NULL},
+        {3, "SUBTYPE_3_OTA_FW_VER",             "subtype3_ok", "OTA F/W vers", NULL},
+        {4, "SUBTYPE_4_CONNECTION_SETUP",       "subtype4_ok", "Connection setup", NULL},
+        {5, "SUBTYPE_5_CPE_UPGRADE_ST",         "subtype5_ok", "CPE firmware upgrade stauts", NULL},
+        {6, "SUBTYPE_6_MODULE_UPGRADE_ST",      "subtype6_ok", "Module firmware upgrade stauts", NULL},
+        {7, "SUBTYPE_7_NET_DOWN_REASON",        "subtype7_ok", "Network down reason", NULL},
+        {8, "SUBTYPE_8_CONNECTION_ATTEMPT",     "subtype8_ok", "Connection attempt", NULL},
+        {9, "SUBTYPE_9_NEW_SMS",                "subtype9_ok", "New SMS", NULL},
+        {10, "SUBTYPE_10_SMS_RESULT",           "subtype10_ok", "SMS result", NULL},
+        { NULL, },
+};
+
+int main(int argc, char *argv[])
+{
+        int type, subtype;
+        /*-----------send----------*/
+        int sockfd;
+        int tx_len = 0;
+        struct ifreq if_idx, if_mac;
+        char if_name[IFNAMSIZ];
+        unsigned char sendbuf[BUF_SIZ] = { 0, };
+        struct sockaddr_ll sadr_ll;
+        struct junos_hdr *jhdr_ptr = (struct junos_hdr *) sendbuf;
+        char cmds[128] = { 0, };
+}
+			</p>
+
+			<p>&nbsp;</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>
+
+
 
